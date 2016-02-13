@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>FlashCards</h1>
+    <h1>Express flashcards application</h1>
+    <div id="flashcards">
+      <% flashcards.forEach(function(flashcard) { %>
+        <div class="flashcard">
+          <h2><%= flashcard.name %></h2>
+          <div class="flashcard-front">
+            <%= flashcard.front %>
+          </div>
+          <div class="flashcard-back">
+            <%= flashcard.back %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
